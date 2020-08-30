@@ -1,0 +1,139 @@
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body, .container {
+    height: 100%;
+}   
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    color: #fff;
+}
+
+.gallery {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 612px;
+    border: 3px solid #f9f9f8;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.main-image-section {
+    width: 688px;
+    height: 612px;
+}
+
+.main-view {
+    width: 100%;
+    height: 612px;
+    opacity: 0;
+    cursor: pointer;
+    padding: 25px ;
+    object-fit: cover;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.ellips{
+    position: absolute;
+    left: 640px;
+    top: 284px;
+    bottom: 284px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 15px;
+    z-index: 1;
+    cursor: pointer;
+}
+.vector{
+    position: absolute;
+    left: 653px;
+    top: 294.12px;
+    bottom: 299.12px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 15px;
+    z-index: 1;
+    cursor: pointer;
+}
+.pagenation{
+    display: flex;
+    flex-direction: row;
+    padding: 2px 14px;
+    position: absolute;
+    width: 49px;
+    height: 28px;
+    left: calc(50% - 49px/2 - -44.5px);
+    bottom: 27px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 4px;
+}
+.pagenation p{
+    position: static;
+    width: 8px;
+    height: 24px;
+    left: 14px;
+    top: 2px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 170%;
+    letter-spacing: 0.25px;
+    color: #444444;
+    flex: none;
+    order: 0;
+    align-self: center;
+    margin: 10px 0px;
+}
+.caption-container {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100px;
+    bottom: -100px;
+    opacity : 0;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.main-image-section:hover .caption-container {
+    bottom: 0;
+    opacity: 1;
+}
+.thumbnails {
+    width: 78px;
+    height: 78px;
+    padding: 0px;
+    margin-left: 40px;
+    border-radius: 4px;
+}
+.thumbnails img {
+    width: 78px;
+    height: 78px;
+    opacity: 0.7;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 4px;
+    -webkit-transition: opacity 0.3s ease 0s;
+    -moz-transition: opacity 0.3s ease 0s;
+    transition: opacity 0.3s ease 0s;
+}
+.thumbnails img:hover {
+    opacity: 1;
+}
+.thumbnails img:focus {
+    opacity: 1
+}

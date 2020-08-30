@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    -ms-overflow-style: scrollbar;
+    overflow-style: scrollbar;
+    background-color: #DDD;
+  }
+  
+  
+  main {
+    max-width: 100%;
+    margin: auto;
+    height: 100vh;
+    background-color: #DDD;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: -13px;
+  }
+  .basliq{
+      display: flex;
+      width: 100%;
+      height: 150px;
+      background: #1ebea5;
+      position: relative;
+      top: 14px;
+  }
+  .basliq img{
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+  }
+  .basliq h4{
+    font-size: 106px;
+    position: relative;
+    left: 96px;
+    top: 7px;
+  } 
+
+
+  .chat-box-container {
+    margin: 0;
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 0;
+  
+}
+  
+  .chat-box-header {
+    display: block;
+    text-align: center;
+  }
+  
+  .chat-box {
+    margin: 4px 4px 4px 4px;
+    border: 2px solid black;
+    flex-grow: 1;
+    overflow-y: scroll;
+    background-image: url("/image/wp.jpg");
+    background-size: cover;
+    background-repeat: no-repeat, repeat;
+  }
+  
+  .chat-box p {
+    margin: 0;
+    padding: 6px;
+    font-size: 50px;
+    background: none 0px 0px repeat scroll rgb(239, 239, 239);
+    border-radius: 20px;
+  }
+  
+  .ai-person-container {
+    display: block;
+    overflow: auto;
+    position: relative;
+    top: 15px;
+  }
+  
+  .ai,
+  .person {
+    overflow: auto;
+    margin: 4px;
+    border: 2px solid black;
+    border-radius: 8px;
+    display: inline-block;
+  }
+  
+  .ai {
+    text-align: left;
+    margin-right: 36px;
+    float: left;
+    border-bottom-left-radius: 0px;
+  }
+  
+  .person {
+    text-align: left;
+    margin-left: 36px;
+    float: right;
+    border-bottom-right-radius: 0px;
+  }
+  
+  .ai-date,
+  .person-date {
+    font-size: 10px;
+    clear: both;
+  }
+  
+  .ai-date {
+    float: left;
+    margin-left: 6px;
+    font-size: 33px;
+    color: white;
+  }
+  
+  .person-date {
+    float: right;
+    margin-right: 6px;
+    font-size: 33px;
+    color: white;
+  }
+  
+  .chat-input-container {
+    position: relative;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    top: -20px;
+  }
+  
+  .chat-input {
+    height: 78px;
+    width: auto;
+    display: inline-block;
+    flex-grow: 11;
+    padding: 2px 2px 2px 2px;
+    margin: 0 4px 0 4px;
+    font-size: 72px;
+    border: 2px solid black;
+    border-radius: 95px;
+  }
+  
+  .chat-input:focus {
+    outline: 0;
+  }
+  
+  .chat-submit {
+    width: 100px;
+    height: 70px !important;
+    padding: 2px 2px 2px 2px;
+    margin-right: 4px;
+    border: 2px solid black;
+    background-color: #69AAFF;
+    font-size: 18px;
+  }
+  
+  .chat-submit:hover {
+    cursor: pointer;
+    background-color: #80BBFF;
+  }
+  
+  .chat-submit:focus {
+    outline: 0;
+  }
+  
+  /* @media screen and (max-width: 480px) {
+    .chat-box p {
+      font-size: 30 px;
+    }
+    .chat-input {
+      width: 60%;
+      float: left;
+      font-size: 28px;
+    }
+    .chat-submit {
+      float: right;
+    } */
+  }
+
+  #mobile{
+      display: none;
+  }
+
+  @media only screen and (max-device-width : 450px) {
+    #desktop   {
+        display: none;
+    }
+    #mobile {
+        display:block;
+    }
+}
